@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="shortcut icon" href="/images/kisspng-google-logo-5b02bbe1d5c6e0.2384399715269058258756.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="HTML JavaScript">
+            <h1>HTML JAVASCRIPT</h1>
+            <h2>Memakai JavaScript untuk menganti text</h2>
+            <p>Ini adalah contoh menulis "Hello JavaScript!" di dalam elemen menggunakan id="demo":</p>
+
+            <p id="demo"></p>
+
+            <script>
+                document.getElementById("demo").innerHTML = "Hello JavaScript";
+                document.getElementById("demo").style.fontSize = "25px";
+                document.getElementById("demo").style.color = "red";
+                document.getElementById("demo").style.backgroundColor = "yellow";
+            </script>
+        </div>
+        <hr>
+        <div>
+            <h1>Cara Memakai atribut src</h1>
+            <p>Ini adalah JavaScript yang dapat menganti atribut src menjadi gambar</p>
+
+            <script>
+                function light(sw) {
+                    var pic;
+                    if (sw == 0) {
+                        pic = "images/pic_bulboff.gif"
+                    } else {
+                        pic = "images/pic_bulbon.gif"
+                    }
+                    document.getElementById("myImage").src = pic;
+                }
+            </script>
+
+            <img id="myImage" src="images/pic_bulboff.gif" alt="ini gambar" width="100" height="180">
+
+            <p>
+                <button type="button" onclick="light(1)">Light On</button>
+                <button type="button" onclick="light(0)">Light Off</button>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h1>NoScript</h1>
+
+            <p id="demo"></p>
+
+            <script>
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            </script>
+
+            <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+            <p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+        </div>
+    </body>
+</html>
